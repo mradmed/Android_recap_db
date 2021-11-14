@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SignUpActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lnr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edSignUpLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/hint_last_name"/>
+
+        <EditText
+            android:id="@+id/edSignUpFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/hint_first_name"/>
+
+        <EditText
+            android:id="@+id/edSignUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/hint_email"/>
+
+        <EditText
+            android:id="@+id/edSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/hint_password"/>
+
+        <EditText
+            android:id="@+id/edSignUpPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="phone"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/hint_phone_number"/>
+
+<!--        android:text="Doe"-->
+<!--        android:text="John"-->
+<!--        android:text="john.doe@esprit.tn"-->
+<!--        android:text="password"-->
+<!--        android:text="99112233"-->
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/btnSignUp"
+            android:onClick="doSignUp"
+            android:textColor="@color/colorTextWhite" />
+
+    </LinearLayout>
+
+</RelativeLayout>
